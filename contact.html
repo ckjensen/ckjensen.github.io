@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, shrink-to-fit=yes">
+    <meta name="description" content="Colleen Kean Jensen Fine Art Gallery">
+    <meta name="author" content="Colleen Kean Jensen">
+    <meta name="keywords" content="Portfolio,Fine Art, Gallery, Colleen Kean Jensen, Colleen Jensen, Pastels, Oil Painting, Watercolor">
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Colleen Kean Jensen - About</title>
+ 
+ <!--Fonts and Stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="Font-Awesome-4.7/css/font-awesome.min.css">                
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	
+ 	<!-- for artwork -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                                      
+    <link rel="stylesheet" type="text/css" href="css/hero-slider-style.css">                              
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">                                 
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css"> 	
+	<link rel="stylesheet" type="text/css" href="css/styles-0.0.0.css"/>
+
+	<!-- for blog -->
+	<link rel="stylesheet" type="text/css" href="css/w3s.css">
+
+	<!-- overriding -->
+	<link rel="stylesheet" type="text/css" href="css/styles-0.0.0.css"/>	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+
+        <!-- These two JS are loaded at the top for gray scale including the loader. -->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- jQuery (https://jquery.com/download/) -->
+
+	<script>
+	
+		var tm_gray_site = false;
+		
+		if(tm_gray_site) {
+			$('html').addClass('gray');
+		}
+		else {
+			$('html').removeClass('gray');   
+		}
+	</script>
+</head>
+
+<body onload="extractParametersandLoad()">
+    
+	<header class="w3-container w3-center w3-margin w3-padding-small"> 
+		<div class="w3-card-4 w3-white contactMe">
+            
+			<img class="contactMe w3-card-4" 
+                 src="notused" 
+                 name="Artwork" id="image"/>
+            
+			<span class="blogImageCredit larger strong">
+				<span id="pictureName"></span></br></br>
+				<span id="medium"></span></br>
+				<span id="size"></span></br>
+				<span id="framing"></span></br></br>
+				<span id="price"></span>				
+			</span>
+		</div>
+
+		<div class = "w3-margin-top contactMe">
+			<h3>Thank you for your interest! </h3>
+			<div class="formElement">  I will be happy to answer any question you may have
+			<span id="nfsThankyou"> or assist you in purchasing items for <span id="pictureName2"></span>.
+			<span id="unavailable"> Unfortunately the Original Artwork has sold but unlimited reproduction items are still available.</br></span>			.
+			</div>
+
+			<div class="contactForm"
+				<form action="mailto:ckeanjensen@gmail.com?subject=Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Artwork&nbsp;Inquiry" method="get" enctype="text/plain">
+ 
+					<input id="emailSubject" type="hidden" name="artwork"/>
+					
+					<span>I am interested in:&nbsp;</span>
+					<div id="available">
+						<input class="formElement" type="checkbox" id="original" name="original" value="">
+						<label class="formElement" for="original">Original Artwork</label>
+					</div>
+					<div id="nfs">
+						<input class="formElement"type="checkbox" id="notecards" name="notecards" value="please specify quantity:"/>
+						<label  for="notecards"><a href="notecards.html">Notecard(s)</a></label>
+										
+						<input class="formElement"type="checkbox" id="print" name="print" value="available in x sizes. Please specify size/quantity"/>
+						<label class="formElement" for="print"><a href="print.html">Print(s)</a></label>
+						
+						<input class="formElement"type="checkbox" id="mousepad" name="mousepad" value="please specify quantity:"/>
+						<label class="formElement" for="mousepad"><a href="print.html">Mousepad(s)</a></label>
+				
+						<input class="formElement"type="checkbox" id="magnet" name="magnet" value="please specify quantity:">
+						<label class="formElement" for="magnet"><a href="print.html">Magnet(s)</a></label></br>
+					</div>
+					
+					<input class="formMessage"type="input" id="name" name="name" placeholder="Your Name:" required="required"/>
+					<input class="formMessage"type="email" id="email" name="email" placeholder="Your Email:" required="required"/>
+					<input class="formMessage"type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your phone (optional):">
+					
+					<textarea name="comments" class="formMessage" required="required" placeholder="Feel free to elaborate or ask any questions"></textarea>
+					</br>
+					<input class="btn" type="submit" value="Email" />
+					<input class="btn" type="reset" name="reset" value="Clear" />
+				</form>
+
+					</br></br>				
+			</div>
+		</div>
+	</header>
+</body>
+
+<script language="JavaScript">
+	
+	function extractParametersandLoad()
+	{
+		var parameters = location.search.substring(1).split("&");
+
+		var temp = parameters[0].split("=");
+		var fileName = unescape(temp[1]);
+		
+		temp = parameters[1].split("=");
+		var picName = unescape(temp[1]);
+		picName = picName.replace(/\*/gi," ");
+		
+		temp = parameters[2].split("=");
+		var medium = unescape(temp[1]);
+        medium = medium.replace(/\*/gi," "); 
+		
+		temp = parameters[3].split("=");
+		var size = unescape(temp[1]);
+		
+		temp = parameters[4].split("=");
+		var framing = unescape(temp[1]);
+		
+		temp = parameters[5].split("=");
+		var price = unescape(temp[1]);
+		
+		var unavail = document.getElementById("unavailable");
+		var avail = document.getElementById("available");
+		var nfs = document.getElementById("nfs");
+		var nfsThankyou = document.getElementById("nfsThankyou");
+		
+		if (price == 'sold') 
+		{
+			price = "Sold";
+			unavail.style.display = "inline";
+			avail.style.display = "none";
+			nfs.style.display = "inline";	
+			nfsThankyou.style.display = "inline";				
+		}
+		else if (price == 'NFS')
+		{
+			unavail.style.display = "inline";
+			avail.style.display = "none";
+			nfs.style.display = "none";		
+			nfsThankyou.style.display = "none";	
+		}
+		else 
+		{
+			price = "$" + price;
+			avail.style.display = "inline";
+			unavail.style.display = "none;";			
+			nfs.style.display = "inline";	
+			nfsThankyou.style.display = "inline";
+		}
+
+		document.getElementById("image").src = "img/" + fileName + ".jpg";    
+        document.getElementById("pictureName").innerHTML = picName;
+        document.getElementById("pictureName2").innerHTML = picName;
+		document.getElementById("medium").innerHTML = medium;
+		document.getElementById("size").innerHTML = size;
+		document.getElementById("framing").innerHTML = framing;
+		document.getElementById("price").innerHTML = price;
+		$("#emailSubject").val(picName+"*"+fileName);
+		
+		
+	}
+
+</script>
+</html>
