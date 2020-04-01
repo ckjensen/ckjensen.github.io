@@ -16,7 +16,7 @@ body
 	margin: 0 auto;
 	background-color: #e7e4e4;
 	color:#363030;
-	font: 17px/26px;
+	font-size: 17px;
 	font-style:normal;
 	font-weight: normal;
 }
@@ -296,7 +296,6 @@ ul
 	line-height: 2em;
 	font-weight:normal; 
 	font-style:normal;
-	font-size: normal;
 }
 
 ul.tm-navbar
@@ -324,7 +323,7 @@ ul.listleft	{ text-align: left; padding-left: 16em;}
 
 li.bold		
 {
-	font-weight:bold; font-style:normal; font-size: 16px;
+	font-weight:bold; font-style:normal; 
 }
 
 figure { margin: 0; }
@@ -332,15 +331,17 @@ figure { margin: 0; }
 }
 #index
 {
-	width: 40px;
+	width: 2em;
 }
+
 #artwork
 {
-	width: 40px;
+	width: 7em;
 }
+
 #blog
 {
-	width: 40px;
+	width: 2em;
 }
 
 /* -------------------------------- 
@@ -459,7 +460,7 @@ nav
 
 .navbar { padding: 0; }
 
-.nav
+.topNav
 { 
 	color:#363030;
 	position: relative;
@@ -468,12 +469,12 @@ nav
 	height: 2em;
 }
 
-.nav::after {
+.topNav::after {
 	clear: both;
-	 content: "";
+	content: "";
 }
 
-.nav ul
+.topNav ul
 {
 
 	list-style: none;
@@ -485,7 +486,7 @@ nav
 	width: 100%;
 }
 
-.nav li 
+.topNav li a
 {
 	display: inline-block;
 	list-style: none;
@@ -494,7 +495,9 @@ nav
 	padding-left: 1em; 
 	font-weight:normal; 
 	text-align: center;
+
 }
+
 /* ==========================================================================
    Main Content
    ========================================================================== */
@@ -2012,7 +2015,7 @@ button:focus { outline: none; }
 .bigbold	{font-size: 16px; font-weight: bold; line-height:1.3em}
 .biggerbold	{font-size: 18px; font-weight: bold; line-height:1.3em}
 .caligraphybold	{font-family: Lucida Calligraphy, Lucida, Helvetica, Arial, sans-serif;
-		font-size: 20px; font-weight: bold; line-height:1.3em}
+		 font-weight: bold; line-height:1.3em}
 .italictext	{font-style:italic;}
 .underline	{text-decoration:underline}
 .centertext	{text-align:center; font-size:100%}
