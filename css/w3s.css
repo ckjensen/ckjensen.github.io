@@ -371,7 +371,7 @@ z-index:1
 .w3-cell-row:before,.w3-cell-row:after,
 .w3-clear:after,.w3-clear:before,
 .w3-bar:before,.w3-bar:after
-{content:"";display:table;clear:both}
+{content:"";display:block;clear:both}
 
 .w3-col,.w3-half,.w3-third,.w3-twothird,
 .w3-threequarter,.w3-quarter
@@ -551,7 +551,7 @@ z-index:1
 	transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%)
 }
-	
+
 .w3-display-left
 {
 	position:absolute;
