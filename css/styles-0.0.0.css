@@ -275,6 +275,20 @@ li.bold
 
 figure { margin: 0; }
 
+/* ==========================================================================
+   Classes
+   ========================================================================== */
+
+.italics { font-style: italic; }
+.strong { font-weight: bold; }
+.small { font-size: 90%; }
+.smaller { font-size: 80%; }
+.large { font-size: 120%; }
+.caligraphybold	{font-family: Lucida Calligraphy, Lucida, Helvetica, Arial, sans-serif;}
+.smallPadding { padding: 0 1em;}
+.smallMargin {margin: 1em;}
+.centerText {textalign: center;}
+
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -434,11 +448,18 @@ Container
 /* ==========================================================================
    Blog and Index
    ========================================================================== */
+div.quote
+{
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	margin: 0;
+}
+   
 div.aboutBlog
 {
 	text-align: justify;
-	padding: 0 1em 1em 1em;
-	margin: 1em;
+	padding: 1em;
+	margin: 0;
 }
 
 div.blogHeaderImage
@@ -450,12 +471,6 @@ div.blogHeaderImage
 	width: 30%;
 	height: auto;
 	}	
-
-.artwork
-{
-	padding: 0;
-	background-color: #f3f1f1;
-}
 
 div.blogEntry
 {
@@ -500,12 +515,6 @@ div .blogImages {
 	padding-bottom: 2em;
 }
 
-.italics { font-style: italic; }
-.strong { font-weight: bold; }
-.small { font-size: 90%; }
-.smaller { font-size: 80%; }
-.large { font-size: 120%; }
-.caligraphybold	{font-family: Lucida Calligraphy, Lucida, Helvetica, Arial, sans-serif;}
 
 /* ==========================================================================
    Contact
@@ -777,6 +786,7 @@ textarea.fortextarea {
 
 .cd-hero-slider li {
   position: absolute;
+  list-style: none; 
   top: 0;
   left: 0;
   width: 100%;
@@ -785,6 +795,7 @@ textarea.fortextarea {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;
+  background-color: #2c343b;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -809,21 +820,6 @@ textarea.fortextarea {
   transition: opacity 2s;
 }
 
-/* size of the viewable */
-.cd-hero-slider {
-    height: 2em;
-  }
-@media only screen and (min-width: 768px) {
-  .cd-hero-slider {
-    height: 2em;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .cd-hero-slider {
-    height: 2em;
-  }
-}
 
 .cd-hero-slider .cd-full-width,
 .cd-hero-slider .cd-half-width {
@@ -833,15 +829,12 @@ textarea.fortextarea {
   z-index: 1;
   left: 0;
   top: 0;
-  /* this padding is used to align the text 
-  padding-top: 100px; */
-  padding-top: 0px; /* updated */
+  padding-top: 0;
   text-align: center;
   /* Force Hardware Acceleration in WebKit */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.cd-hero-slider .cd-full-width { padding-top: /*50px;*/ 0px; }
  
  .cd-hero-slider .cd-img-container img {
   position: absolute;
@@ -884,18 +877,6 @@ textarea.fortextarea {
   transform: translateX(-50%) translateY(-50%);
 }
  
-/* Hero Slider */
-.cd-hero-slider { height: auto; width: 100%}
-.cd-hero-slider li { 
-	background-color: #2c343b;
-	list-style: none; 
-}
-
-.cd-hero-slider .cd-full-width 
-{ 
-	padding: 0;
-}
-
 .cd-hero-slider h2, .cd-hero-slider p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   line-height: 1.2;
@@ -954,7 +935,7 @@ textarea.fortextarea {
 @media only screen and (min-width: 768px) {
   .cd-hero-slider .cd-full-width,
   .cd-hero-slider .cd-half-width {
-    padding-top: /* 150px; */  0px;
+    padding-top: /* 150px; */  0;
   }
   .cd-hero-slider .cd-bg-video-wrapper {
     display: block;
@@ -987,7 +968,7 @@ textarea.fortextarea {
 @media only screen and (min-width: 1170px) {
   .cd-hero-slider .cd-full-width,
   .cd-hero-slider .cd-half-width {
-    padding-top: /* 220px; */  0px;
+    padding-top: /* 220px; */  0;
   }
   .cd-hero-slider h2, .cd-hero-slider p {
  	max-width: none;
@@ -1002,9 +983,7 @@ textarea.fortextarea {
 }
 
 /* -------------------------------- 
-
 Single slide animation
-
 -------------------------------- */
 @media only screen and (min-width: 768px) {
   
@@ -1020,7 +999,7 @@ Single slide animation
     transition: opacity 0s 5s;
   }
   
-  .cd-hero-slider li.is-moving .cd-full-width h2,
+  .cd-hero-slider li.is-moving .cd-full-width h6,
   .cd-hero-slider li.is-moving .cd-full-width p,
   .cd-hero-slider li.is-moving .cd-full-width .cd-btn {
     /* this is the slide moving outside the viewport 
@@ -1076,7 +1055,7 @@ opacity: 0;
 .cd-hero-slider p:last-child { margin-bottom: 0; }
 .cd-hero-slider.small-screen { height: 100%; }
 /*-- .cd-hero-slider .cd-full-width { padding-top: 50px; }  --*/
-.cd-hero-slider .cd-full-width { text-align: left; }
+
 
 .cd-hero-slider p.tm-figure-description 
 { 
@@ -1163,12 +1142,6 @@ opacity: 0;
 )
 /********************* Artwork Navigation - tm-navbar ************************************/
 
-.tm-brand-icon 
-{ 
-	font-size: 3rem;
-	padding: 10px;
-}
-
 .cd-hero-slider.small-screen { height: 100%; }
 
 .tm-2-col-textbox-2 {
@@ -1177,8 +1150,8 @@ opacity: 0;
 	margin-bottom: 1em;
 /*--	padding: 25px; 
 /*--	margin-bottom: 30px; --*/
-	-ms-flex: 0 1 auto; 
-	    flex: 0 1 auto; 
+	-ms-flex: 0 1em auto; 
+	    flex: 0 1em auto; 
 	        /* Fix flexbox in IE 10 bug https://philipwalton.com/articles/normalizing-cross-browser-flexbox-bugs/ */
 }
 
@@ -1197,11 +1170,6 @@ opacity: 0;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-}
-
-.tm-textbox { 
-	display: inline-block; 
-	width: 100%;
 }
 
 .tm-bg-white-translucent { background-color: rgba(255,255,255,0.8); }
@@ -1297,7 +1265,7 @@ span.copyright
 	padding: .8em;
 }
 
-.tm-textbox-padding { padding: 1%;}
+.tm-textbox-padding { padding: 0;}
 /*.tm-textbox-padding { padding: 5%;}*/
 
 #google-map {
@@ -1324,80 +1292,32 @@ figure.effect-sadie figcaption::before {
 	transform: translate3d(0,50%,0);
 }
 
-figure.effect-sadie h2
+figure.effect-sadie:hover figcaption::before,
+figure.effect-sadie:hover h {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sadie h6
  {
-	font-weight: 400;
-	font-size: 3rem;
 	position: absolute;
-	top: 50%;
-	left: 0;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 400;
+	font-size: 80%;
+	top: 65%;
+	left:0;
+	margin: auto;
 	width: 100%;
 	color: #484c61;
-	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	padding: 1em;
+	opacity: 0;
+/*	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
 	transition: transform 0.35s, color 0.35s;
 	-webkit-transform: translate3d(0,-50%,0);
-	transform: translate3d(0,-50%,0);
-}
-
-figure.effect-sadie .availableButton {
-	position: absolute;
-	top: 1em;
-	right: 1%;
-	width: 4.5%;
-/*	bottom: 0;
-	right: 0;
-	width: 5%;
-	  */
-	height: auto;
-	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
-	transition: transform 0.35s, color 0.35s;
-	-webkit-transform: translate3d(0,-50%,0);
-	transform: translate3d(0,-50%,0);
-}
-
-figure.effect-sadie figcaption::before,
-figure.effect-sadie p {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-sadie p {
-	position: absolute;
-	bottom: 1.5em;
-	left: 0;
-	padding: 1em;
-	width: 100%;
-	opacity: 0;
-	-webkit-transform: translate3d(0,10px,0);
-	transform: translate3d(0,10px,0);
-}
-
-figure.effect-sadie  h2
-{
-	opacity: 0;
-}
-
-figure.effect-sadie  h6
-{
-	position: absolute;
-	top: 50%;
-	text-align: center;
-	opacity: 0;
-	
-	/*  added */
-	padding: 1em;
-
-	/*
-	position: relative;
-	top: 0%;
-	*/
-}
-figure.effect-sadie:hover h2 
-{
-	color: #fff;
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-5em,0);
-	transform: translate3d(0,-50%,0) translate3d(0,-5em,0);
-	opacity: 1;
+	transform: translate3d(0,-50%,0); */
 }
 
 figure.effect-sadie:hover h6
@@ -1411,13 +1331,6 @@ figure.effect-sadie:hover h6
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-5em,0);
 	transform: translate3d(0,-50%,0) translate3d(0,-5em,0);
 	opacity: 1;
-}
-
-figure.effect-sadie:hover figcaption::before,
-figure.effect-sadie:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
 }
 
 figure figcaption, 
@@ -1467,9 +1380,7 @@ figure img {
     opacity: 1;
 }
 
-
 /* from here stylesheet */
-
 figure.effect-sadie:hover a
 {
 	color: #f5e0a3;
@@ -1489,40 +1400,6 @@ figure.effect-sadie:hover a
 
 /*  from template */
 
-.grid-item figure figcaption {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    color: #fff;
-  /*  text-transform: uppercase; 
-    font-size: 1.25em;*/
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.grid-item figure {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.grid-item figure img {
-    position: relative;
-    display: block;
-    max-width: 100%;
-    opacity: 1;
-}
-
-.grid-item figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
 .tm-white-box-margin-b { margin-bottom: 1em; }
 .cd-full-width .container-fluid.tm-page-width {
 	padding-left: 2em;
@@ -1532,21 +1409,18 @@ figure.effect-sadie:hover a
 /* Media Queries */
 
 @media only screen and (min-width: 400px) {
-	.cd-hero-slider h2 { font-size: 1.4em; }
-	.grid-item figure figcaption { padding: 1em; }
-	
+	.cd-hero-slider h { font-size: 1.4em; }
+
 	/* added */
 	 figure figcaption { padding: 1em; }
 }
 
 
 @media only screen and (min-width: 480px) {
-	.cd-hero-slider h2.tm-text-title { font-size: 1.8em; }
+	.cd-hero-slider h6.tm-text-title { font-size: 1.8em; }
 /*	.tm-textbox-padding { padding: 1%; }
 	.tm-textbox-padding { padding: 30px 40px; } 
-	.grid-item { width: 50%; }
-	.grid-item figure figcaption { padding: 1.5em; }	 */
-	.grid-item figure figcaption { padding: 1em; }	
+
 /* new */	
 	figure { width: 100%; height: auto; }
 	figure figcaption { padding: 1em; }	
