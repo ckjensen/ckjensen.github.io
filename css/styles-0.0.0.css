@@ -133,7 +133,7 @@ img.center
     margin: 0 auto;
     padding:0px;
 	height: auto;
-	width: 40%;
+	width: 70%;
 }
 
 img.homePage
@@ -446,9 +446,16 @@ Container
 }
 
 /* ==========================================================================
-   Blog and Index
+   Index, About, Blog
    ========================================================================== */
-div.quote
+div.caption
+{
+	text-align: justify;
+	padding: 1em 4em 1em 4em;
+	margin: 0;
+}
+   
+   div.quote
 {
 	text-align: center;
 	padding: 1em 1em 1em 1em;

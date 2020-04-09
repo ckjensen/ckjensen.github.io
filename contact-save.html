@@ -77,45 +77,49 @@
 
 		<div class = "w3-margin-top contactMe">
 			<h3>Thank you for your interest! </h3>
-		
-			<div class="formElement">  
-				<span id="unavailable"> Unfortunately the Original Artwork has sold.</span>
-				I will be happy to answer any question you may have on <span id="pictureName2"></span> or any other artwork.
-			<span id="nfsThankyou"></span>
- 
+			<div class="formElement">  I will be happy to answer any question you may have
+			<span id="nfsThankyou"> or assist you in purchasing items for <span id="pictureName2"></span>.
+			<span id="unavailable"> Unfortunately the Original Artwork has sold but reproduction items are still available.</br></span>			.
 			</div>
 
 			<div class="contactForm"
-
-
--->	<!--
-
-
-		
-
-
--->				
-				<form action="mailto:ckeanjensen@gmail.com?subject=Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Artwork&nbsp;Inquiry" method="post" enctype="text/plain">
+				<form action="mailto:ckeanjensen@gmail.com?subject=Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Artwork&nbsp;Inquiry" method="get" enctype="text/plain">
+ 
 					<input id="emailSubject" type="hidden" name="artwork"/>
-					<input class="formElement" type="checkbox" id="mailing" name="mailing" value="yes">
-					<label class="formElement" for="original"></br>I am interested in being added to your mailing list.</label>
-
+					
+					<span>I am interested in:&nbsp;</span>
 					<div id="available">
+						<input class="formElement" type="checkbox" id="original" name="original" value="">
+						<label class="formElement" for="original">Original Artwork</label>
 					</div>
-				
 					<div id="nfs">
+						<input class="formElement"type="checkbox" id="notecards" name="notecards" value="please specify quantity:"/>
+						<label  for="notecards"><a href="notecards.html">Notecard(s)</a></label>
+										
+						<input class="formElement"type="checkbox" id="print" name="print" value="available in x sizes. Please specify size/quantity"/>
+						<label class="formElement" for="print"><a href="print.html">
+						
+						Print(s) - Special-ordered fine art Giclee prints from my original work.   The paper is acid-free, lignen-free with a textured watercolor feel.</a></label>
+						Prices: 
+						
+						<input class="formElement"type="checkbox" id="mousepad" name="mousepad" value="please specify quantity:"/>
+						<label class="formElement" for="mousepad"><a href="print.html">Mousepad(s)</a></label>
+				
+						<input class="formElement"type="checkbox" id="magnet" name="magnet" value="please specify quantity:">
+						<label class="formElement" for="magnet"><a href="print.html">Magnet(s)</a></label></br>
 					</div>
-		
-					<input class="formMessage" type="input" id="name" name="name" placeholder="Your Name:" required>
-					<input class="formMessage" type="email" id="email" name="email" placeholder="Your Email:" required >
-					<input class="formMessage" type="tel" id="phone" name="phone"  placeholder="Your phone (optional):">					
-					<textarea name="comments" class="formMessage" placeholder="Feel free to elaborate or ask any questions" required></textarea>
+					
+					<input class="formMessage"type="input" id="name" name="name" placeholder="Your Name:" required="required"/>
+					<input class="formMessage"type="email" id="email" name="email" placeholder="Your Email:" required="required"/>
+					<input class="formMessage"type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your phone (optional):">
+					
+					<textarea name="comments" class="formMessage" required="required" placeholder="Feel free to elaborate or ask any questions"></textarea>
 					</br>
-					<input class="btn" type="submit" value="Submit">
-					<input class="btn" type="reset" value="Clear">			  
-				</form> 
+					<input class="btn" type="submit" value="Email" />
+					<input class="btn" type="reset" name="reset" value="Clear" />
+				</form>
 
-				</br></br>				
+					</br></br>				
 			</div>
 		</div>
 	</header>
