@@ -236,7 +236,7 @@ a:active MUST come after a:hover.
 
 a:link
 {
-	color: chocolate;
+	color: gray;
 }
 
 a, button 
