@@ -620,7 +620,7 @@ img.contactMe
 
 div.contactform
 {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 .checkBox {	display: inline-block; width: 100%; text-align: left; float: left; vertical-align: middle;}
@@ -628,7 +628,7 @@ div.contactform
 div.contactMe
 {
 	text-align: center;
-	width: 80%;
+	width: 90%;
 	padding: 1em;
 	bottom:0;
 	margin: auto;
@@ -659,6 +659,12 @@ div.contactMe
 }
 
    
+.formJustify
+{
+		display: block;
+		text-align: justify;
+}
+
 .formElement
 {
 	left:0;
@@ -666,6 +672,7 @@ div.contactMe
 	float: left;
 	vertical-align: middle;
 }
+
 
 .formMessage, .formMessageReadOnly
 {
