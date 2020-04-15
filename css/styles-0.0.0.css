@@ -282,6 +282,12 @@ figure { margin: 0; }
 .large  { font-size: 120%; }
 .caligraphybold	{font-family: Lucida Calligraphy, Lucida, Helvetica, Arial, sans-serif;}
 .smallPadding { padding: 0 1em 0 1em; }
+.smallPaddingRight { padding-right: 1em; }
+.smallPaddingLeft { padding-left: 1em; }
+.mediumMarginRight { margin: 1em 2em 1em 1em; }
+.mediumMarginLeft { margin: 1em 1em 1em 2em; }
+.smallMarginRight { margin: 1em 1em 1em 0; }
+.smallMarginLeft { margin: 1em 0 1em 1em; }
 .mediumPadding {padding: 0 2em 0 2em; }
 .mediumMargin  {margin: 1em 3em 1em 3em; }
 .smallMargin { margin: 1em; }
@@ -527,7 +533,7 @@ div.blogHeaderImage
 	text-align: justify;
 	float:left;
 	padding: .5em;
-	width: 18em;
+	width: 15em;
 	height: auto;
 	}	
 
