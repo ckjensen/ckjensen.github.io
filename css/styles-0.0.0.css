@@ -284,8 +284,8 @@ figure { margin: 0; }
 .smallPadding { padding: 0 1em 0 1em; }
 .smallPaddingRight { padding-right: 1em; }
 .smallPaddingLeft { padding-left: 1em; }
-.mediumMarginRight { margin: 1em 2em 1em 1em; }
-.mediumMarginLeft { margin: 1em 1em 1em 2em; }
+.mediumMarginRight { margin: 1em 2em 2em 1em; }
+.mediumMarginLeft { margin: 1em 1em 2em 2em; }
 .smallMarginRight { margin: 1em 1em 1em 0; }
 .smallMarginLeft { margin: 1em 0 1em 1em; }
 .mediumPadding {padding: 0 2em 0 2em; }
@@ -518,6 +518,7 @@ div.quote
 	text-align: left;
 	padding: 1em 1em 1em 1em;
 	margin: 0;
+
 }
 
 div.aboutBlog
