@@ -294,7 +294,6 @@ figure { margin: 0; }
 .sideMargin { margin: 0 1em 0 1em;}
 .center {text-align: center; margin: auto;}
 
-
 .centerTextblogImages
 {
     text-align:center;
@@ -546,25 +545,36 @@ div.blogHeaderImage
 
 div.blogEntry
 {
+	position: relative;
+	display: inline-block;
+	text-align: center;
 	width: 100%;
+	padding: 0 10% 0 10%;
+}
+
+div.border
+{
 	border: none;
-	padding: 0 1em 0 1em;
 	border-top-style: solid;
 	border-width: thin;
 	border-color: #ad9f9f; 
-
 }
 
 .blogEntry .title
 {
-	text-align: center;
 	font-size: 130%;
 }
 .blogEntry .date
 {
-	text-align: center;
 	font-size: 80%;
 }
+
+.thumbnail {width: 10%; min-width: 5em; padding-top: 1em; padding-left: 1em; padding-right: 1em;}
+
+#expandMessage-LookingUp {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-LookingUp {display: none; margin: 0 auto 0 auto; }
+#expandMessage-ClimbersHold {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-ClimbersHold {display: none; margin: 0 auto 0 auto; }
 
 .blogNumber
 {
@@ -572,24 +582,12 @@ div.blogEntry
 	font-size:60%;
 }
 
-div.twoImagesContainer
-{
-	width: 90%;
-	height: auto;
-	margin: 0 auto 0 auto;
-}
-
 .twoImages
 {
-	float: left;
-	width: 45%;
+	display: inline-block;
+	width: 40%;
 	min-width: 15em;
-	height: auto;	
-/*	border-style: none;
-	border-width: thin;
-	border-color: #dcd6d6; */
 	padding: .5em;
-	
 }
 
 .blogDiscussion
