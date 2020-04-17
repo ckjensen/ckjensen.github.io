@@ -108,20 +108,26 @@
 		
 			</div>	
 		</div>
+		
 <!-- Blog entries -->
 		 <!-- Blog entry -->
-		<div class="w3-container blogEntry background-color-lighter smallMargin">
-				<span class="title">Looking Up</span></br> 
-				<span class="date">March 6, 2020</span>
-			
-			<div class="w3-container twoImagesContainer">			
-				<div class="w3-card-4 w3-margin twoImages">					
+		<div class="w3-container blogEntry border">
+			<img class="thumbnail" src="img/SQRpastel-2.jpg" alt="Fractals" >
+			<input type="button" id="expandMessage-LookingUp" value="Expand" name="expand" onclick="expandOnClick('LookingUp')"> 
+			<img class="thumbnail" src="img/SQRpastelPhoto-2.jpg" alt="Fractals">
+			</br>
+			<span class="title">Looking Up</span></br> 
+			<span class="date">March 6, 2020</span>
+		</div>			
+		<div id="expansion-LookingUp">
+			<div class="w3-container blogEntry">	
+				<div class="twoImages w3-card-4">					
 					<img class="" src="img/SQRpastel-2.jpg" alt="Fractals" >
 					<div class="photoCaption ">
 						<span class="smaller">10x14 pastel on paper</span>
 					</div>
 				</div>
-				<div class="w3-card-4 w3-margin twoImages">
+				<div class="twoImages w3-card-4">
 					<img class="" src="img/SQRpastelPhoto-2.jpg" alt="Fractals">
 					<div class="photoCaption ">
 						<span class="smaller">Spring backyard tree photo</span>
@@ -149,22 +155,27 @@
 					thinking about the beauty of nature and mathematics.  Math, nature and art meet again!
 				</span>
 				<span class="blogNumber"></br>002</span>
-			</div>
-		</div> 
-	
-		<!-- Blog entry -->
-		<div class="w3-container blogEntry background-color-lighter smallMargin">
+			</div> 
+		</div>
+	</div>
+		<!-- Blog entry -->		
+		<div class="w3-container blogEntry border">
+			<img class="thumbnail" src="img/SQRpastel-1.jpg" alt="Climber's Hold Pastel" >
+			<input type="button" id="expandMessage-ClimbersHold" value="Expand" name="expand" onclick="expandOnClick('ClimbersHold')"> 
+			<img class="thumbnail" src="img/SQRpastelPhoto-1.jpg" alt="Climber's Hold Photo">
+			</br>
 			<span class="title">Climber's Hold</span></br>
 			<span class="date">November 2, 2019</span>
-
-			<div class="w3-container twoImagesContainer">			
-				<div class="w3-card-4 w3-margin twoImages">		
+		</div>			
+		<div id="expansion-ClimbersHold">
+			<div class="w3-container blogEntry">	
+				<div class="twoImages w3-card-4">					
 					<img class="" src="img/SQRpastel-1.jpg" alt="Climber's Hold Pastel" >
 					<div class="photoCaption"
 						<span class="smaller">20x20 pastel on board</span>
 					</div>
 				</div>
-				<div class="w3-card-4 w3-margin twoImages">
+				<div class="twoImages w3-card-4">	
 					<img class="" src="img/SQRpastelPhoto-1.jpg" alt="Climber's Hold Photo">
 					<div class="photoCaption"
 						<span class="smaller">Pawtuckaway, NH photo</span>
@@ -207,11 +218,27 @@
 	<script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
 	<script src="js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
 	<script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
-	
+	<script>
+			function expandOnClick($extension) 
+		{
+			var x = document.getElementById("expansion" + "-" + $extension);
+			if (x.style.display === "block") 
+			{
+				x.style.display = "none";
+				document.getElementById("expandMessage" + "-" + $extension).value = "Expand";
+
+			} 
+			else 
+			{
+				x.style.display = "block";
+				document.getElementById("expandMessage" + "-" + $extension).value = "Hide";
+			}			
+		}
+	</script>
 	<script>
 
-		function adjustHeightOfPage(pageNo) {
-
+		function adjustHeightOfPage(pageNo) 
+		{
 			var pageContentHeight = 0;
 
 			var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
@@ -244,8 +271,10 @@
 		/*
 			Everything is loaded including images.
 		*/
-		$(window).load(function(){
+		$(window).load(
 
+		function()
+		{
 			adjustHeightOfPage(1); // Adjust page height
 
 			/* Gallery One pop up
@@ -276,7 +305,6 @@
 			-----------------------------------------*/
 			$('#tmNavbar a').click(function(){
 				$('#tmNavbar').collapse('hide');
-
 				adjustHeightOfPage($(this).data("no")); // Adjust page height       
 			});
 
@@ -298,7 +326,7 @@
 			// Write current year in copyright text.
 			$(".tm-copyright-year").text(new Date().getFullYear());
 					   
-		});
+			});
 
 <!-- ****************************** end body ******************************************-->
 
