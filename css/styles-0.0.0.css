@@ -91,7 +91,7 @@ hr {
 	width: 100%;
 	border-top: 1px solid #e7e4e4;
     padding: 0;
-	margin:0 auto;
+	margin:0 auto 1em auto;
 	clear: both;
 }
 
@@ -281,16 +281,18 @@ figure { margin: 0; }
 .smaller { font-size: 80%; line-height: 80%; }
 .large  { font-size: 120%; }
 .caligraphybold	{font-family: Lucida Calligraphy, Lucida, Helvetica, Arial, sans-serif;}
-.smallPadding { padding: 0 1em 0 1em; }
+.smallPadding { padding: 1em ; }
+.smallSidePadding { padding: 0 1em 0 1em; }
 .smallPaddingRight { padding-right: 1em; }
 .smallPaddingLeft { padding-left: 1em; }
 .mediumMarginRight { margin: 1em 2em 2em 1em; }
 .mediumMarginLeft { margin: 1em 1em 2em 2em; }
 .smallMarginRight { margin: 1em 1em 1em 0; }
 .smallMarginLeft { margin: 1em 0 1em 1em; }
-.mediumPadding {padding: 0 2em 0 2em; }
+.mediumPadding {padding: 2em }
 .mediumMargin  {margin: 1em 3em 1em 3em; }
-.smallMargin { margin: 1em; }
+.smallMargin { margin: 1em 1em 1em 1em; }
+.smallMarginNoTop { margin: 0 1em 1em 1em; }
 .sideMargin { margin: 0 1em 0 1em;}
 .center {text-align: center; margin: auto;}
 
@@ -306,6 +308,13 @@ figure { margin: 0; }
 .mainPhoto
 {
 	margin: 0em 20% 0em 20%;
+
+}
+
+.shopPhoto
+{
+	margin: 0em 20% 0em 20%;
+
 }
 
 .photoCaption 
@@ -517,7 +526,6 @@ div.quote
 	text-align: left;
 	padding: 1em 1em 1em 1em;
 	margin: 0;
-
 }
 
 div.aboutBlog
@@ -531,7 +539,7 @@ div.blogHeaderImage
 {
 	position: relative;
 	text-align: justify;
-	float:left;
+	float: left;
 	padding: .5em;
 	width: 15em;
 	height: auto;
@@ -543,15 +551,31 @@ div.blogHeaderImage
 	background-color: #f3f1f1;
 }
 
+
 div.blogEntry
 {
+	content: "";
+	clear: both;
 	position: relative;
-	display: inline-block;
+	display: inline;
 	text-align: center;
 	width: 100%;
-	padding: 0 10% 0 10%;
 }
 
+div.expandedBlogEntry
+{
+	text-align: center;
+	width: 100%;
+}
+
+.blogCard
+{
+	display: inline-block;
+	width: 20%;
+	min-width: 20em;
+	font-size: 90%;
+
+}
 div.border
 {
 	border: none;
@@ -559,22 +583,36 @@ div.border
 	border-width: thin;
 	border-color: #ad9f9f; 
 }
-
-.blogEntry .title
+.middle
 {
+vertical-align: middle;
+}
+.title
+{
+	margin-top: 1em;
 	font-size: 130%;
 }
-.blogEntry .date
+.date
 {
 	font-size: 80%;
 }
 
-.thumbnail {width: 10%; min-width: 5em; padding-top: 1em; padding-left: 1em; padding-right: 1em;}
+.thumbNail {width: 10%; min-width: 5em; padding-top: 1em; padding-left: 1em; padding-right: 1em;}
+.kneeCap {float: left; width: 40%; min-width: 5em; padding-right: 1em; }
 
 #expandMessage-LookingUp {padding-left: 1em; padding-right: 1em; width: 6em;}
 #expansion-LookingUp {display: none; margin: 0 auto 0 auto; }
 #expandMessage-ClimbersHold {padding-left: 1em; padding-right: 1em; width: 6em;}
 #expansion-ClimbersHold {display: none; margin: 0 auto 0 auto; }
+#expandMessage-Giclee {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-Giclee {display: none; margin: 0 auto 0 auto; }
+#expandMessage-Notecards {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-Notecards {display: none; margin: 0 auto 0 auto; }
+#expandMessage-LookingUp {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-Trivets {display: none; margin: 0 auto 0 auto; }
+#expandMessage-Trivets {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expansion-Mousepads {display: none; margin: 0 auto 0 auto; }
+#expandMessage-Mousepads {padding-left: 1em; padding-right: 1em; width: 6em;}
 
 .blogNumber
 {
@@ -697,7 +735,7 @@ div.contactMe
 
 .available
 {
-	border-right-style: solid;
+/*	border-right-style: solid;
 	border-top-style: solid;
 	border-width: 2px;
 	border-image: 
@@ -706,6 +744,7 @@ div.contactMe
       green, 
       rgba(0, 0, 0, 0)
     ) 1 100%;
+	*/
 }
 /* ==========================================================================
    Artwork
@@ -1473,6 +1512,7 @@ figure.effect-sadie  h6
 	top: 50%;
 	text-align: center;
 	opacity: 0;
+	font-size: 80%;
 	
 	/*  added */
 	padding: 1em;
