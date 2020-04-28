@@ -571,11 +571,10 @@ div.expandedBlogEntry
 .blogCard
 {
 	display: inline-block;
-	width: 20%;
-	min-width: 18em;
+	width: 18em;
 	font-size: 90%;
 	margin: 0 1em 1em 1em;
-	padding: 1em ;
+	padding: 1em;
 
 }
 div.border
