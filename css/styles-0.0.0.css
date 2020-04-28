@@ -572,7 +572,7 @@ div.expandedBlogEntry
 {
 	display: inline-block;
 	width: 20%;
-	min-width: 20em;
+	min-width: 18em;
 	font-size: 90%;
 
 }
@@ -600,9 +600,11 @@ vertical-align: middle;
 .thumbNail {width: 10%; min-width: 5em; padding-top: 1em; padding-left: 1em; padding-right: 1em;}
 .kneeCap {float: left; width: 40%; min-width: 5em; padding-right: 1em; }
 
-#expandMessage-LookingUp {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expandMessage-PleinAir {padding-left: 1em; padding-right: 1em; width: 5em;}
+#expansion-PleinAir {display: none; margin: 0 auto 0 auto; }
+#expandMessage-LookingUp {padding-left: 1em; padding-right: 1em; width: 5em;}
 #expansion-LookingUp {display: none; margin: 0 auto 0 auto; }
-#expandMessage-ClimbersHold {padding-left: 1em; padding-right: 1em; width: 6em;}
+#expandMessage-ClimbersHold {padding-left: 1em; padding-right: 1em; width: 5em;}
 #expansion-ClimbersHold {display: none; margin: 0 auto 0 auto; }
 #expandMessage-Giclee {padding-left: 1em; padding-right: 1em; width: 6em;}
 #expansion-Giclee {display: none; margin: 0 auto 0 auto; }
