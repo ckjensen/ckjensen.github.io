@@ -574,6 +574,8 @@ div.expandedBlogEntry
 	width: 20%;
 	min-width: 18em;
 	font-size: 90%;
+	margin: 0 1em 1em 1em;
+	padding: 1em ;
 
 }
 div.border
@@ -598,7 +600,7 @@ vertical-align: middle;
 }
 
 .thumbNail {width: 10%; min-width: 5em; padding-top: 1em; padding-left: 1em; padding-right: 1em;}
-.kneeCap {float: left; width: 40%; min-width: 5em; padding-right: 1em; }
+.kneeCap {float: left; width: 40%; min-width: 5em; padding-right: .5em; }
 
 #expandMessage-PleinAir {padding-left: 1em; padding-right: 1em; width: 5em;}
 #expansion-PleinAir {display: none; margin: 0 auto 0 auto; }
