@@ -607,6 +607,10 @@ vertical-align: middle;
 #expansion-LookingUp {display: none; margin: 0 auto 0 auto; }
 #expandMessage-ClimbersHold {padding-left: 1em; padding-right: 1em; width: 5em;}
 #expansion-ClimbersHold {display: none; margin: 0 auto 0 auto; }
+#expandMessage-LifeOfBen {padding-left: 1em; padding-right: 1em; width: 5em;}
+#expansion-LifeOfBen {display: none; margin: 0 auto 0 auto; }
+#expandMessage-BabyDavid {padding-left: 1em; padding-right: 1em; width: 5em;}
+#expansion-BabyDavid {display: none; margin: 0 auto 0 auto; }
 #expandMessage-Giclee {padding-left: 1em; padding-right: 1em; width: 6em;}
 #expansion-Giclee {display: none; margin: 0 auto 0 auto; }
 #expandMessage-Notecards {padding-left: 1em; padding-right: 1em; width: 6em;}
