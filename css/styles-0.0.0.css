@@ -141,7 +141,7 @@ img.siteHeader
     text-align: center;
     margin: 0 auto;
     padding: 0px;
-	width: 18em;
+	width: 24em;
 	
 }
 
@@ -224,32 +224,44 @@ a:active MUST come after a:hover.
 
 a:link
 {
-	color: gray;
+	color: #696969;
 }
 
 a, button 
 { 
 	transition: all 0.3s ease; 
-	color: dodgerblue; 
+	color: #191919; 
 }
 
 a:visited 
 {
-	color: gray;
+	color: #696969;
 }
 a:hover 	
 {
-	color: dodgerblue;
+	color: #191919;
 }
 a:active 
 {
-	color: dodgerblue;
+	color: #191919;
 }
 
 a.currentPage
 {
-	color: dodgerblue;
+	color: #191919;
 }
+
+a:link
+{
+	color: #696969;
+}
+
+a,button 
+{ 
+	transition: all 0.3s ease; 
+	color: #e6e6e6; 
+}
+
 
 ul
 {
@@ -343,7 +355,7 @@ figure { margin: 0; }
 {
 	background-color: #e7e4e4;
 	background-color: #f3f1f1;
-
+	background-color: #989898;
 }
 
 /* ==========================================================================
@@ -358,6 +370,7 @@ figure { margin: 0; }
 	text-align: center;
 	margin:0;
 	padding: 0;
+	padding-top: 1em;
 }
 
 .header:after
@@ -760,7 +773,7 @@ div.contactMe
 .cd-hero {
 	position: relative;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: #E6E6E6scale;
 }
 
 .cd-hero::after, .cd-hero::before
@@ -814,6 +827,7 @@ div.contactMe
 	padding:0;
 	margin: 0;
     width: auto; 
+	color: #757575
 }
 
 .tm-navbar  
@@ -1258,6 +1272,7 @@ opacity: 0;
 .cd-slider-nav .nav-item:nth-of-type(1) .nav-link:focus {
 /* pastels */
 	background-color: #babade;
+	color: #ffffff;
 }
 
 .cd-slider-nav .nav-item:nth-of-type(2).selected .nav-link,
@@ -1265,6 +1280,7 @@ opacity: 0;
 .cd-slider-nav .nav-item:nth-of-type(2) .nav-link:focus {
 /* oils */			
 	background-color: #ebbdad;
+	color: #ffffff;
 }
 
 .cd-slider-nav .nav-item:nth-of-type(3).selected .nav-link,
@@ -1272,6 +1288,7 @@ opacity: 0;
 .cd-slider-nav .nav-item:nth-of-type(3) .nav-link:focus {
 /* watercolors */		
 	background-color: #b3cce6;	
+	color: #ffffff;
 }
 
 .cd-slider-nav .nav-item:nth-of-type(4).selected .nav-link,
@@ -1279,13 +1296,15 @@ opacity: 0;
 .cd-slider-nav .nav-item:nth-of-type(4) .nav-link:focus {
 /* acrylics */	
 	background-color: #c6ecd6;
+	color: #ffffff;
 }
 
 .cd-slider-nav .nav-item:nth-of-type(5).selected .nav-link,
 .cd-slider-nav .nav-item:nth-of-type(5) .nav-link:hover,
 .cd-slider-nav .nav-item:nth-of-type(5) .nav-link:focus {
 /* ink */	
-	background-color: #f5e0a3;		
+	background-color: #f5e0a3;
+	color: #ffffff;	
 }
 
 #pastels  	{	width: 8em; height: 2em; margin-right: 0; padding-top: 0}
