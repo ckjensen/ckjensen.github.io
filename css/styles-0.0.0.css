@@ -141,8 +141,7 @@ img.siteHeader
     text-align: center;
     margin: 0 auto;
     padding: 0px;
-	width: 24em;
-	
+	max-width: 24em;
 }
 
 img.homePage
@@ -285,7 +284,8 @@ figure { margin: 0; }
 /* ==========================================================================
    Classes
    ========================================================================== */
-
+ 
+   
 .italics { font-style: italic; }
 .strong { font-weight: bold; }
 .stronger {font-weight: 550; }
@@ -355,8 +355,10 @@ figure { margin: 0; }
 {
 	background-color: #e7e4e4;
 	background-color: #f3f1f1;
-	background-color: #989898;
+	background-color: #989898;  /* neutral gray */
+	background-color: #989090;  /* warm gray */
 }
+
 
 /* ==========================================================================
    Header
