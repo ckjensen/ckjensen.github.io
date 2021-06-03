@@ -142,6 +142,7 @@ img.siteHeader
     margin: 0 auto;
     padding: 0px;
 	max-width: 24em;
+	background-color: #989090;  /* warm gray */
 }
 
 img.homePage
