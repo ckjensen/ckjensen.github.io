@@ -73,7 +73,7 @@ h1, h2
 h1, .h1 { font-size: 180%; 	}
 h2, .h2 { font-size: 160%; 	}
 h3, .h3 { font-size: 140%; 	}
-h4, .h4 { font-size: 120%; 	}
+h4, .h4 { font-size: 120%; font-weight:  580;	}
 h5, .h5 { font-size: 100%; 	}
 h6, .h6 { font-size: 100%; 	}
 
@@ -83,6 +83,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	line-height: normal;
 	text-decoration: none;
 	}
+
 	
 hr {
     display: block;
