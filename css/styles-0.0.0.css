@@ -693,6 +693,15 @@ div.contactMe
 	bottom:0;
 	margin: auto;
 }
+div.contactPage
+{
+	text-align: center;
+	width: 95%;
+	padding: 1em;
+	bottom:0;
+	margin: auto;
+	max-width: 60em;
+}
 
 #available
 {

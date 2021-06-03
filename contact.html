@@ -58,61 +58,62 @@
 </head>
 
 <body onload="extractParametersandLoad()">
-    
-	<header class="w3-container w3-center w3-margin mediumPadding"> 
-		<div class="w3-card-4 w3-white contactMe">
-			<span class="contactImageTitle">
-				<span class="" id="pictureName"></span>
-			</span>
-            
-			<img class="contactMe" 
-                 src="notused" 
-                 name="Artwork" id="image"/>
-            
-			<span class="blogImageCredit larger ">
-				<span id="medium"></span></br>
-				<span id="size"></span></br>
-				<span id="framing"></span></br>
-				<span id="price"></span></br></br>
-				<span>©&nbsp;Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Art</span>			
-			</span>
-		</div>                                                                                                                                                                                                            
-
-		<div class = "w3-margin-top contactMe">
-			<h3>Thank you for your interest! </h3>
-			<div class="formJustify">  
-				<span id="unavailable"></br>Unfortunately the Original Artwork has sold.</span>
-				I will be happy to answer any question you may have on <span id="pictureName2"></span> 
-				or any other artwork.</br></br>
-				<span id="nfsThankyou"></span>
-			</div>
-			</br>
-			<div class="contactForm"	
-				<form action="mailto:ckeanjensen@gmail.com?subject=Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Artwork&nbsp;Inquiry" method="post" enctype="text/plain">
-					<input id="emailSubject" type="hidden" name="artwork"/>
-					<div id="available">
-					</div>
-			`
-					<div id="nfs">
-					</div>
-		
-					<input class="formMessage" type="input" id="name" name="name" placeholder="Your Name:" required>
-					<input class="formMessage" type="email" id="email" name="email" placeholder="Your Email:" required >
-					<input class="formMessage" type="tel" id="phone" name="phone"  placeholder="Your phone (optional):">					
-					<textarea name="comments" class="formMessage" placeholder="Feel free to elaborate or ask any questions" required></textarea>
-				</form> 
+    <div class="contactPage">
+		<header class="w3-container w3-center mediumPadding"> 
+			<div class="w3-card-4 w3-white contactMe">
+				<span class="contactImageTitle">
+					<span class="" id="pictureName"></span>
+				</span>
 				
-				<div class="checkBox">
-					<input class="formElement" type="checkbox" id="mailing" name="mailing" value="yes">
-					<label class="formElement" for="original"> &nbsp;Add to mailing list</label>
-				</div>				
-				</br>	
-				<input class="btn" type="submit" value="Submit">
-				<input class="btn" type="reset" value="Clear">			  
+				<img class="contactMe" 
+					 src="notused" 
+					 name="Artwork" id="image"/>
+				
+				<span class="blogImageCredit larger ">
+					<span id="medium"></span></br>
+					<span id="size"></span></br>
+					<span id="framing"></span></br>
+					<span id="price"></span></br></br>
+					<span>©&nbsp;Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Art</span>			
+				</span>
+			</div>                                                                                                                                                                                                            
+
+			<div class = "w3-margin-top contactMe">
+				<h3>Thank you for your interest! </h3>
+				<div class="formJustify">  
+					<span id="unavailable"></br>Unfortunately the Original Artwork has sold.</span>
+					I will be happy to answer any question you may have on <span id="pictureName2"></span> 
+					or any other artwork.</br></br>
+					<span id="nfsThankyou"></span>
+				</div>
+				</br>
+				<div class="contactForm"	
+					<form action="mailto:ckeanjensen@gmail.com?subject=Colleen&nbsp;Kean&nbsp;Jensen&nbsp;Artwork&nbsp;Inquiry" method="post" enctype="text/plain">
+						<input id="emailSubject" type="hidden" name="artwork"/>
+						<div id="available">
+						</div>
+				`
+						<div id="nfs">
+						</div>
+			
+						<input class="formMessage" type="input" id="name" name="name" placeholder="Your Name:" required>
+						<input class="formMessage" type="email" id="email" name="email" placeholder="Your Email:" required >
+						<input class="formMessage" type="tel" id="phone" name="phone"  placeholder="Your phone (optional):">					
+						<textarea name="comments" class="formMessage" placeholder="Feel free to elaborate or ask any questions" required></textarea>
+					</form> 
+					
+					<div class="checkBox">
+						<input class="formElement" type="checkbox" id="mailing" name="mailing" value="yes">
+						<label class="formElement" for="original"> &nbsp;Add to mailing list</label>
+					</div>				
+					</br>	
+					<input class="btn" type="submit" value="Submit">
+					<input class="btn" type="reset" value="Clear">			  
+				</div>
 			</div>
-		</div>
-		</br>		
-	</header>
+			</br>		
+		</header>
+	</div>
 </body>
 
 <script language="JavaScript">
