@@ -610,6 +610,11 @@ vertical-align: middle;
 	margin-top: 1em;
 	font-size: 130%;
 }
+.titleSmaller
+{
+	margin-top: 1em;
+	font-size: 100%;
+}
 .date
 {
 	font-size: 80%;
@@ -648,6 +653,13 @@ vertical-align: middle;
 {
 	display: inline-block;
 	width: 40%;
+	min-width: 15em;
+	padding: .5em;
+}
+.threeImages
+{
+	display: inline-block;
+	width: 25%;
 	min-width: 15em;
 	padding: .5em;
 }
