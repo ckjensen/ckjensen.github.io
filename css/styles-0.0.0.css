@@ -155,6 +155,14 @@ img.homePage
 	border: none; 
 	padding: 0;
 }
+img.oneImage
+{
+	margin: 1em;
+	width: 40%;
+	height: auto;	
+	border: none; 
+	padding: 0;
+}
 
 img.threeImages
 {
