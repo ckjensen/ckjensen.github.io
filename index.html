@@ -86,8 +86,20 @@
 <!-- ****************************** Main Content ***********************************************************************************-->
 	<div class="cd-hero background-color-lighter ">
 	
+			<div class="mySlides w3-animate-opacity">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">2 / 6</div>	 -->
+				<span class="large">Paint Out Adirondacks</br></span>
+				<span class="smaller ">"Painting with Friends in the Adirondacks", OutdoorPainter Magazine</br></span>
+			</div>
+			<img class="" src="img/2021-PleinAirMagazine-PaintingWithFriends.jpg" alt="Keeses Mill Road Pond">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
 	
-		<div class="mySlides  w3-animate-fading">	
+		<div class="mySlides  w3-animate-opacity">	
 			<div class="photoCaption">		
 		  <!--				<div class="numbertext">2 / 6</div>	 -->
 				<span class="large">Keeses Mill Road Pond</br></span>
@@ -100,7 +112,7 @@
 			</div>
 		</div>
 		
-		<div class="mySlides w3-animate-fading">	
+		<div class="mySlides w3-animate-opacity">	
 			<div class="photoCaption">		
 		  <!--				<div class="numbertext">3 / 6</div>	 -->
 				<span class="large">Jay Covered Bridge<br></span>
@@ -114,7 +126,7 @@
 			</div>
 		</div>
 		
-		<div class="mySlides w3-animate-fading">	
+		<div class="mySlides w3-animate-opacity">	
 			<div class="photoCaption">		
 		  <!--				<div class="numbertext">4 / 6</div>	 -->
 				<span class="large">Saranac Village Dock</br></span>
@@ -127,7 +139,7 @@
 			</div>
 		</div>
 
-		<div class="mySlides w3-animate-fading">	
+		<div class="mySlides w3-animate-opacity">	
 			<div class="photoCaption">		
 		  <!--				<div class="numbertext">5 / 6</div>	 -->
 				<span class="large">Bog River Falls</br></span>
@@ -140,7 +152,7 @@
 			</div>
 		</div>
 
-		<div class="mySlides  w3-animate-fading">	
+		<div class="mySlides w3-animate-opacity">	
 			<div class="photoCaption">		
 		  <!--				<div class="numbertext">6 / 6</div>	 -->
 				<span class="large">Norman Ridge Road</br></span>
@@ -153,7 +165,7 @@
 			</div>
 		</div>
 		
-		<div class="mySlides  w3-animate-fading">
+		<div class="mySlides w3-animate-opacity">
 			<div class="photoCaption">
 		  <!--				<div class="numbertext">1 / 6</div>	 -->
 				<span class="large ">A Climber's Hold</br></span>
@@ -208,12 +220,12 @@
 	<script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
 	
 	<script>
-	var  myVar;
+//	var  myVar;
 	var slideIndex = 1;
 	showSlides(slideIndex);
 
 	function plusSlides(n) {
-	  clearTimeout(myVar);
+//	  clearTimeout(myVar);
 	  showSlides(slideIndex += n);
 	}
 
@@ -232,7 +244,7 @@
 		  slides[i].style.display = "none";
 	  }
 	  slides[slideIndex-1].style.display = "block";
-	  myVar =  setTimeout(function(){showSlides(slideIndex= slideIndex+1)}, 10000); // Change image every 2 seconds
+//	  myVar =  setTimeout(function(){showSlides(slideIndex= slideIndex+1)}, 10000); // Change image every 2 seconds
 	}
 	
 	function adjustHeightOfPage(pageNo) {
