@@ -824,7 +824,6 @@ position: relative;
 .prev,
 .next {
   z-index:99;
-    visibility: visible;
   cursor: pointer;
   position: absolute;
   top: 70px;
@@ -834,7 +833,7 @@ position: relative;
   color:#363030;*/
   color: white;
   font-weight: normal;
-  font-size: x-large;
+  font-size: xx-large;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
