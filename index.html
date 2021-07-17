@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=0, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, user-scalable=0, shrink-to-fit=yes initial-scale=1">
     <meta name="description" content="Colleen Kean Jensen Fine Art Gallery">
     <meta name="author" content="Colleen Kean Jensen">
     <meta name="keywords" content="Portfolio,Fine Art, Gallery, Colleen Kean Jensen, Colleen Jensen, Pastels, Oil Painting, Watercolor">
 	<meta name="robots" content="index, follow" />
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="content-type" content="charset=iso-8859-2" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	
  	<!-- for artwork -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">                                      
     <link rel="stylesheet" type="text/css" href="css/hero-slider-style.css">                              
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">                                 
@@ -84,9 +85,80 @@
 	</div>
 <!-- ****************************** Main Content ***********************************************************************************-->
 	<div class="cd-hero background-color-lighter ">
-		<div class="mainPhoto" >
-			<span class="large">A Climber's Hold</br></span>
-			<span class="smaller ">Pawtuckaway, NH</br></span>
+	
+	
+		<div class="mySlides  w3-animate-fading">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">2 / 6</div>	 -->
+				<span class="large">Keeses Mill Road Pond</br></span>
+				<span class="smaller ">Paul Smith, New York</br></span>
+			</div>
+			<img class="" src="img/pastel-45.jpg" alt="Keeses Mill Road Pond">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
+		
+		<div class="mySlides w3-animate-fading">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">3 / 6</div>	 -->
+				<span class="large">Jay Covered Bridge<br></span>
+				<span class="smaller ">from above the falls</br></span>
+				<span class="smaller ">Jay, New York</br></span>
+			</div>
+			<img class="" src="img/pastel-46.jpg" alt="Jay Covered Bridge">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
+		
+		<div class="mySlides w3-animate-fading">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">4 / 6</div>	 -->
+				<span class="large">Saranac Village Dock</br></span>
+				<span class="smaller ">Saranac, New York</br></span>
+			</div>
+			<img class="" src="img/pastel-47.jpg" alt="Saranac Village Dock">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
+
+		<div class="mySlides w3-animate-fading">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">5 / 6</div>	 -->
+				<span class="large">Bog River Falls</br></span>
+				<span class="smaller ">Tupper Lake, New York</br></span>
+			</div>
+			<img class="" src="img/pastel-48.jpg" alt="Bog River Falls">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
+
+		<div class="mySlides  w3-animate-fading">	
+			<div class="photoCaption">		
+		  <!--				<div class="numbertext">6 / 6</div>	 -->
+				<span class="large">Norman Ridge Road</br></span>
+				<span class="smaller ">Franklin, New York</br></span>
+			</div>
+			<img class="" src="img/pastel-49.jpg" alt="Norman Ridge Road">
+
+			<div class="photoCaption">
+				<span>Publisher's invitational Paint Out Adirondacks, June 12-June 19, 2021</span>
+			</div>
+		</div>
+		
+		<div class="mySlides  w3-animate-fading">
+			<div class="photoCaption">
+		  <!--				<div class="numbertext">1 / 6</div>	 -->
+				<span class="large ">A Climber's Hold</br></span>
+				<span class="smaller ">Pawtuckaway, NH</br></span>
+			</div>
 			<img class="" src="images/small/AClimbersHold-small.jpg" alt="A Climber's Hold, Pawtuckaway, N.H.">
 
 			<div class="photoCaption">
@@ -98,10 +170,15 @@
 				<span>Accepted into 
 					<a class="" href="https://www.cmpastels.org/no_tom2.html" target="_blank">
 					Central Mass Pastel Society (CMPS) Marks of Distinction 2021.</a>
-					</br></br>
+					</br>
 				</span>
 			</div>
 		</div>
+		
+		  <!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
 		</br>
 		<h4>Recent, Current and Future Events</h4>
 		<span class="smaller">
@@ -131,37 +208,63 @@
 	<script src="js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
 	
 	<script>
+	var  myVar;
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-		function adjustHeightOfPage(pageNo) {
+	function plusSlides(n) {
+	  clearTimeout(myVar);
+	  showSlides(slideIndex += n);
+	}
 
-			var pageContentHeight = 0;
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
 
-			var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+	function showSlides(n) {
 
-			if( pageType != undefined && pageType == "gallery") {
-				pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
-			}
-			else {
-				pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
-			}
-		   
-			// Get the page height
-			var totalPageHeight = $('.cd-slider-nav').height()
-									+ pageContentHeight
-									+ $('.tm-footer').outerHeight();
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  myVar =  setTimeout(function(){showSlides(slideIndex= slideIndex+1)}, 10000); // Change image every 2 seconds
+	}
+	
+	function adjustHeightOfPage(pageNo) {
 
-			// Adjust layout based on page height and window height
-			if(totalPageHeight > $(window).height()) 
-			{
-				$('.cd-hero-slider').addClass('small-screen');
-				$('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
-			}
-			else 
-			{
-				$('.cd-hero-slider').removeClass('small-screen');
-				$('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
-			}
-		}
+	var pageContentHeight = 0;
+
+	var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+	if( pageType != undefined && pageType == "gallery") {
+		pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+	}
+	else {
+		pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+	}
+   
+	// Get the page height
+	var totalPageHeight = $('.cd-slider-nav').height()
+							+ pageContentHeight
+							+ $('.tm-footer').outerHeight();
+
+	// Adjust layout based on page height and window height
+	if(totalPageHeight > $(window).height()) 
+	{
+		$('.cd-hero-slider').addClass('small-screen');
+		$('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+	}
+	else 
+	{
+		$('.cd-hero-slider').removeClass('small-screen');
+		$('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+	}
+	}
 
 		/*
 			Everything is loaded including images.
@@ -221,6 +324,7 @@
 			$(".tm-copyright-year").text(new Date().getFullYear());
 					   
 		});
+			</script>
 
 <!-- ****************************** end body ******************************************-->
 
