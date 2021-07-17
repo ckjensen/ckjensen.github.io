@@ -810,9 +810,12 @@ div.contactPage
 
    /* Hide the images by default */
 .mySlides {
+position: relative;
   display: none;
-  margin: 0em 20% 0em 20%;
+  width: 100%;
 }
+
+
    /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -820,20 +823,26 @@ div.contactPage
 /* Next & previous buttons */
 .prev,
 .next {
+  z-index:99;
+    visibility: visible;
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 70px;
   width: auto;
  /* padding: 16px; 
-  margin-top: -50px;*/
-  color:#363030;
+  margin-top: -50px;
+  color:#363030;*/
+  color: white;
   font-weight: normal;
   font-size: x-large;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
-
+.banner
+{
+	z-index: 1;
+}
 /* Position the "next button" to the right */
 .next {
   right: 10%;
