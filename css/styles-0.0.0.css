@@ -339,15 +339,6 @@ figure { margin: 0; }
 
 }
 
-.photoCaption 
-{
-
-	padding: 0em;
-	font-size: 80%;
-	background-color: #ddd;
-	padding: 2px 16px;
-
-}
 
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -841,7 +832,23 @@ position: relative;
 }
 .banner
 {
+	position: relative;
 	z-index: 1;
+}
+
+.banner .photoCaption 
+{
+	position: absolute;
+	visibility: hidden;
+	padding: 0em;
+	font-size: 80%;
+	background-color: #ddd;
+	padding: 2px 16px;
+}
+
+.banner:hover .photoCaption
+{
+	visibility: visible;
 }
 /* Position the "next button" to the right */
 .next {
