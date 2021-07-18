@@ -812,7 +812,8 @@ div.contactPage
 .mySlides {
 position: relative;
   display: none;
-  width: 100%;
+  width: 55%;
+  margin: 0 auto 0 auto;
 }
 
 
@@ -831,7 +832,7 @@ position: relative;
  /* padding: 16px; 
   margin-top: -50px;
   color:#363030;*/
-  color: white;
+  color: ccc;
   font-weight: normal;
   font-size: xx-large;
   border-radius: 0 3px 3px 0;
