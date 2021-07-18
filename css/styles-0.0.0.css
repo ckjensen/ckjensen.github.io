@@ -807,7 +807,6 @@ position: relative;
   margin: 0 auto 0 auto;
 }
 
-
    /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -823,7 +822,7 @@ position: relative;
  /* padding: 16px; 
   margin-top: -50px;
   color:#363030;*/
-  color: ccc;
+  color: #ccc;
   font-weight: normal;
   font-size: xx-large;
   border-radius: 0 3px 3px 0;
@@ -834,7 +833,7 @@ position: relative;
 {
 	position: relative;
 	width: 55%;
-	  margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;
 	z-index: 1;
 }
 .photoCaption
@@ -866,7 +865,7 @@ position: relative;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-/*  background-color: rgba(0, 0, 0, 0.8);
+/*  background-color: rgba(0, 0, 0, 0.8); */
 }
 
 /* Number text (1/3 etc) */
