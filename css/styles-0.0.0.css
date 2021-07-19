@@ -842,9 +842,6 @@ div.contactPage
   cursor: pointer;
   position: absolute;
   top: 10%;
- /* padding: 16px; 
-  margin-top: -50px;
-  color:#363030;*/
   color: #eee;
   font-weight: normal;
   font-size: xx-large;
@@ -876,7 +873,8 @@ div.contactPage
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 10;
-	color: #ddd;
+	color: #fff;
+	font-style: bold;
 	font-size: xx-large;
 }
 .photoCaption a
@@ -905,6 +903,36 @@ div.contactPage
   border-radius: 3px 0 0 3px;
 }
 
+.nextprev a:visited
+{
+	color: #ccc;
+	font-style: normal;
+}
+.nextprev a:hover
+{
+	color: #fff;
+	font-style: bold;
+}
+.nextprev a:active
+{
+	color: #ccc;
+	font-style: normal;
+}
+/***** small screens ***/
+@media only screen and (max-width: 1500px) {
+
+.photoCaption
+{
+	font-size:medium;
+}
+/***** small screens ***/
+@media only screen and (max-width: 1000px) {
+
+.photoCaption
+{
+	font-size:medium;
+}
+
 @media only screen and (max-width: 800px) {
 
 .photoCaption
@@ -923,12 +951,21 @@ div.contactPage
 .prev {
   left: 15%;
 }
+.youtubebutton
+{
+	position: absolute;
+	bottom: 10%;
+	right: 25%;
+	width: 3%;
+	z-index: 10;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-/*  background-color: rgba(0, 0, 0, 0.8); */
+}
+/***** end small screens ***/
+
+
+
+background-color: rgba(0, 0, 0, 0.8); 
 }
 
 /* Number text (1/3 etc) */
