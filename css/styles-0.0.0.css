@@ -274,8 +274,9 @@ a,button
 
 ul
 {
-	list-style: none;
+	list-style-type: none;
 }
+
 
 li{
 	display: inline;
@@ -474,8 +475,20 @@ Main Navigation
 	padding-left: 0em; 
 	font-size:100%; 
 	text-align: center;
+	color: #ccc;
+	font-weight: normal;
+}
+.topNav a:hover 	
+{
+	color: #eee;
+	font-weight: bold;
 }
 
+.topNav a.currentPage
+{
+	color: #eee;
+	font-weight: bold;
+}
 
 #index 		{width: 5em;}
 #artwork 	{width: 7em;}
@@ -514,6 +527,16 @@ Container
 /* ==========================================================================
    Index, About, Blog
    ========================================================================== */
+div.events
+{
+	display: relative;
+	margin: 0 auto 0 auto;
+}
+
+div.events ul
+{
+	list-style-type: square;
+}
 
 div.caption
 {
@@ -801,10 +824,10 @@ div.contactPage
 
    /* Hide the images by default */
 .mySlides {
-position: relative;
-  display: none;
-  width: 100%;
-  margin: 0 auto 0 auto;
+	position: relative;
+	display: none;
+	width: 100%;
+	margin: 0 auto 0 auto;
 }
 
    /* Add a pointer when hovering over the thumbnail images */
@@ -818,7 +841,7 @@ position: relative;
   z-index:99;
   cursor: pointer;
   position: absolute;
-  top: 150px;
+  top: 10%;
  /* padding: 16px; 
   margin-top: -50px;
   color:#363030;*/
@@ -831,36 +854,47 @@ position: relative;
 }
 .banner
 {
-	position: relative;
 	width: 55%;
 	margin: 0 auto 0 auto;
 	z-index: 1;
 }
+
 .youtubebutton
 {
 	position: absolute;
-	bottom: 5%;
+	bottom: 10%;
 	right: 25%;
 	width: 3%;
 	z-index: 10;
 }
+
 .photoCaption
-{ width: 100%;}
-
-.banner .photoCaption 
 {
+	display: none;
 	position: absolute;
-	visibility: hidden;
-	padding: 0em;
-	font-size: 80%;
-	background-color: #ddd;
-	padding: 2px 16px;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	color: #ddd;
+	font-size: xx-large;
+}
+.photoCaption a
+{
+	color: #ddd;
+}
+.photoCaption a:hover
+{
+	color: #eee;
+	font-style: bold;
 }
 
-.banner:hover .photoCaption
+.banner:hover  + .photoCaption
 {
-	visibility: visible;
+	display: block;
+
 }
+
 /* Position the "next button" to the right */
 .next {
   right: 25%;
@@ -870,6 +904,27 @@ position: relative;
   left: 25%;
   border-radius: 3px 0 0 3px;
 }
+
+@media only screen and (max-width: 800px) {
+
+.photoCaption
+{
+	visibility: hidden;
+}
+.banner
+{
+	width: 80%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15%;
+}
+.prev {
+  left: 15%;
+}
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
