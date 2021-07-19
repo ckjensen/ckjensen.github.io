@@ -842,7 +842,7 @@ div.contactPage
   cursor: pointer;
   position: absolute;
   top: 10%;
-  color: rgba(f,f,f, 0.0); /* white with all opacity */
+  color: rgba(f,f,f, 0.5); /* white with all opacity */
   font-weight: normal;
   font-size: xx-large;
   border-radius: 0 3px 3px 0;
@@ -936,9 +936,11 @@ div.contactPage
 /* Position the "next button" to the right */
 .next {
   right: 15%;
+  font-size: large;
 }
 .prev {
   left: 15%;
+  font-size: large;
 }
 .youtubebutton
 {
