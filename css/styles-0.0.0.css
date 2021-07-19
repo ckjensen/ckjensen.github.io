@@ -811,18 +811,18 @@ position: relative;
 .cursor {
   cursor: pointer;
 }
+
 /* Next & previous buttons */
 .prev,
 .next {
   z-index:99;
   cursor: pointer;
   position: absolute;
-  top: 70px;
-  width: auto;
+  top: 150px;
  /* padding: 16px; 
   margin-top: -50px;
   color:#363030;*/
-  color: #ccc;
+  color: #eee;
   font-weight: normal;
   font-size: xx-large;
   border-radius: 0 3px 3px 0;
@@ -835,6 +835,14 @@ position: relative;
 	width: 55%;
 	margin: 0 auto 0 auto;
 	z-index: 1;
+}
+.youtubebutton
+{
+	position: absolute;
+	bottom: 5%;
+	right: 25%;
+	width: 3%;
+	z-index: 10;
 }
 .photoCaption
 { width: 100%;}
@@ -855,11 +863,11 @@ position: relative;
 }
 /* Position the "next button" to the right */
 .next {
-  right: 10%;
+  right: 25%;
   border-radius: 3px 0 0 3px;
 }
 .prev {
-  left: 10%;
+  left: 25%;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
