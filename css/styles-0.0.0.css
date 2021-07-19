@@ -827,7 +827,7 @@ div.contactPage
 	position: relative;
 	display: none;
 	width: 100%;
-	margin: 0 auto 0 auto;
+	margin: 2em auto 0 auto;
 }
 
    /* Add a pointer when hovering over the thumbnail images */
@@ -842,7 +842,7 @@ div.contactPage
   cursor: pointer;
   position: absolute;
   top: 10%;
-  color: #eee;
+  color: rgba(f,f,f, 0.0); /* white with all opacity */
   font-weight: normal;
   font-size: xx-large;
   border-radius: 0 3px 3px 0;
