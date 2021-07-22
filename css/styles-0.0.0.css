@@ -91,8 +91,8 @@ hr {
     border: 0;	
 	width: 100%;
 	border-top: 1px solid #e7e4e4;
-    padding: 0;
-	margin:0 auto 1em auto;
+    padding: 1px;
+	margin:1px auto 0 auto;
 	clear: both;
 }
 
@@ -400,22 +400,20 @@ figure { margin: 0; }
    ========================================================================== */
 .social-list
 {
-}
-
-.social-list li {
-	float: right;
-	margin: 0 1px;
+	clear: both;
+	text-align: center;
+	margin: 1px 0 1px 0;
 	z-index: -1;
 }
 
-li.socialIcon
+.socialIcon
 {
-	float: left;
 	display: inline-block;
+	padding: 2px;
 }
 img.socialIcon	
 {
-	height: .75em;
+	height: 1.5em;
 	width: auto;
 	margin-right: 5px;
 }
@@ -425,7 +423,7 @@ img.socialIcon
 	margin: 0 0px;
 }
 
-.inline-list, .social-list, .subnav {
+.inline-list, .subnav {
 	position: absolute;
 	float: right;
 	padding: 0;
@@ -1615,8 +1613,8 @@ opacity: 0;
     width: 100%;
     z-index: 1001;
     padding: 0;
-	font-size:60%;
-	margin: .5em 0 .5em 0;
+	font-size:80%;
+	margin: 0;
 }
 
 span.branding		
